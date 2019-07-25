@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/freesharing_fffef5">
+
+    <!-- @@@@ banner @@@@ 9%-->
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/rl_free_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/freesharing_mg_blue"
+        app:layout_heightPercent="9%h">
+
+        <ImageView
+            android:id="@+id/iv_free_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/freesharing_back"
+            app:layout_heightPercent="50%h"
+            app:layout_widthPercent="50%h" />
+
+        <TextView
+            android:id="@+id/tv_free_Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/freesharing_free_sharing_low"
+            android:textColor="@color/freesharing_white"
+            app:layout_textSizePercent="30%h" />
+
+        <TextView
+            android:id="@+id/tv_free_done"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:gravity="center"
+            android:text="@string/freesharing_done"
+            android:textColor="@color/freesharing_white"
+            android:visibility="gone"
+            app:layout_textSizePercent="24%h" />
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <!-- @@@@ tab @@@@ 7%-->
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:id="@+id/rl_free_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_free_banner"
+        android:background="@color/freesharing_white"
+        android:orientation="horizontal"
+        app:layout_heightPercent="7%h">
+
+        <!-- images tag -->
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/rl_free_images_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_widthPercent="33.3%w">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/freesharing_images"
+                android:textColor="@color/freesharing_c_666666" />
+
+            <View
+                android:id="@+id/v_free_under_images_tag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/freesharing_tabline"
+                app:layout_heightPercent="5%h" />
+
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <!-- videos tag -->
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/rl_free_videos_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_widthPercent="33.3%w">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/freesharing_videos"
+                android:textColor="@color/freesharing_c_666666" />
+
+            <View
+                android:id="@+id/v_free_under_videos_tag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/freesharing_tabline"
+                android:visibility="gone"
+                app:layout_heightPercent="5%h" />
+
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <!-- transfer list tag -->
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/rl_free_transferList_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_widthPercent="33.3%w">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/freesharing_transfer_list"
+                android:textColor="@color/freesharing_c_666666" />
+
+            <View
+                android:id="@+id/v_free_under_transferList_tag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/freesharing_tabline"
+                android:visibility="gone"
+                app:layout_heightPercent="5%h" />
+
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <!-- @@@@ clear all 6% @@@@  -->
+    <TextView
+        android:id="@+id/tv_free_clearHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_free_tab"
+        android:background="@color/freesharing_gray12"
+        android:gravity="center"
+        android:text="@string/freesharing_clear_history"
+        android:textColor="@color/freesharing_gray11"
+        android:visibility="gone"
+        app:layout_heightPercent="6%h"
+        app:layout_textSizePercent="2.5%h" />
+
+    <!-- @@@@ recycle @@@@ 84%-->
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/rl_free_recycle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_free_clearHistory">
+
+        <!-- IMAGE -->
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/rl_free_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <!-- images recycle -->
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rcv_free_Imageitems"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <!--  no image  -->
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:id="@+id/rl_free_noImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/rl_free_tab"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv_free_noImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/freesharing_no_image"
+                    app:layout_heightPercent="34.1%w"
+                    app:layout_marginTopPercent="20%h"
+                    app:layout_widthPercent="74.5%w" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_free_noImage"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/freesharing_no_images"
+                    android:textColor="@color/freesharing_gray11"
+                    app:layout_marginTopPercent="5%h"
+                    app:layout_textSizePercent="3.5%h" />
+
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <!-- VIDEO -->
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/rl_free_video"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <!-- video recycle -->
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rcv_free_Videoitems"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/rl_free_tab" />
+
+            <!--  no video  -->
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:id="@+id/rl_free_noVideo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/rl_free_tab"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv_free_noVideo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/freesharing_no_video"
+                    app:layout_heightPercent="34.1%w"
+                    app:layout_marginTopPercent="20%h"
+                    app:layout_widthPercent="74.5%w" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_free_noVideo"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/freesharing_no_videos"
+                    android:textColor="@color/freesharing_gray11"
+                    app:layout_marginTopPercent="5%h"
+                    app:layout_textSizePercent="3.5%h" />
+
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <!-- TRANSFER LIST -->
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/rl_free_transferList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rcv_free_transferListItems"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <!--  no transfer -->
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:id="@+id/rl_free_noTransferList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/rl_free_tab"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv_free_noTransferList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/freesharing_no_transfer_list"
+                    app:layout_heightPercent="34.1%w"
+                    app:layout_marginTopPercent="20%h"
+                    app:layout_widthPercent="74.5%w" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_free_noTransferList"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/freesharing_no_transfer_list"
+                    android:textColor="@color/freesharing_gray11"
+                    app:layout_marginTopPercent="5%h"
+                    app:layout_textSizePercent="3.5%h" />
+
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <!-- @@@@ no device found @@@@ -->
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/rl_free_noDevice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/freesharing_white"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_free_noDevice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/freesharing_no_device_found"
+            android:textColor="@color/freesharing_black"
+            app:layout_marginPercent="2%w"
+            app:layout_textSizePercent="2.7%h" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_free_noDevice"
+            android:text="@string/freesharing_when_using_the_same_wifi_network_as_your_friends"
+            app:layout_marginBottomPercent="1.5%h"
+            app:layout_marginLeftPercent="2%w"
+            app:layout_marginRightPercent="2%w"
+            app:layout_textSizePercent="2.2%h" />
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <!-- @@@@ show detail image @@@@ -->
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/rl_free_detailImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/freesharing_fffef5"
+        android:visibility="gone">
+
+        <!-- detail image -->
+        <ImageView
+            android:id="@+id/iv_free_detailImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_marginPercent="1%w" />
+
+        <!-- banner -->
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/rl_free_detailImage_banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/freesharing_black"
+            app:layout_heightPercent="8%h">
+
+            <!-- freesharing_back -->
+            <ImageView
+                android:id="@+id/iv_free_detailImage_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/freesharing_back"
+                app:layout_heightPercent="50%h"
+                app:layout_widthPercent="50%h" />
+
+            <!-- title -->
+            <TextView
+                android:id="@+id/tv_free_detailImage_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="Title"
+                android:textColor="@color/freesharing_white"
+                app:layout_heightPercent="50%h"
+                app:layout_textSizePercent="33%h"
+                app:layout_widthPercent="50%w" />
+
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <!-- @@@@ show transferList dialog @@@@ -->
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/rl_free_transferList_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_free_banner"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.8"
+            android:background="@color/freesharing_gray" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rcv_free_transferList_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/freesharing_bg_freetranslist_dialog_rcv"
+            app:layout_marginPercent="10%w" />
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <!-- @@@@ show had connected user -->
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/rl_free_choice_user"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_free_banner"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_free_choice_user"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.8"
+            android:background="@color/freesharing_gray" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rcv_free_choice_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/freesharing_white"
+            app:layout_heightPercent="30%h"
+            />
+
+        <View
+            android:id="@+id/v_free_choice_user"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_above="@id/rcv_free_choice_user"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:background="@color/freesharing_gray" />
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/rl_free_choice_user_hide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/v_free_choice_user"
+            android:background="@color/freesharing_white"
+            app:layout_heightPercent="5%h">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:rotation="90"
+                android:src="@drawable/freesharing_general_ic_next"
+                app:layout_heightPercent="60%h"
+                app:layout_widthPercent="60%h" />
+
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <!-- @@@@ wait @@@@ -->
+    <com.p_freesharing.p_freesharing.widget.ConnView
+        android:id="@+id/cv_free_user"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+    
+
+    <!-- @@@@ cancel dialog @@@@ -->
+    <com.p_freesharing.p_freesharing.widget.CancelView
+        android:id="@+id/cancel_free_user"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <!-- @@@@ interrupt dialog @@@@ -->
+    <com.p_freesharing.p_freesharing.widget.InterruptView
+        android:id="@+id/interrupt_free_user"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

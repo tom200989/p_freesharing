@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:id="@+id/ll_item_free_translist_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/freesharing_white"
+        android:orientation="vertical"
+        app:layout_marginBottomPercent="1%w"
+        app:layout_marginLeftPercent="1%w"
+        app:layout_marginRightPercent="1%w"
+        app:layout_marginTopPercent="1%w">
+
+        <!-- title -->
+        <TextView
+            android:id="@+id/tv_item_free_translist_dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/freesharing_dimen_10dip"
+            android:layout_marginStart="@dimen/freesharing_dimen_10dip"
+            android:text="@string/freesharing_From_phonename"
+            android:textColor="@color/freesharing_black"
+            app:layout_marginTopPercent="2%w"
+            app:layout_textSizePercent="4.5%w" />
+
+        <!-- des -->
+        <TextView
+            android:id="@+id/tv_item_free_translist_dialog_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/freesharing_dimen_10dip"
+            android:layout_marginStart="@dimen/freesharing_dimen_10dip"
+            android:text="@string/freesharing_There_are_files_waiting_for_you_to_accept"
+            app:layout_marginTopPercent="1%w"
+            app:layout_textSizePercent="4%w" />
+
+        <!-- buttons -->
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/freesharing_dimen_10dip"
+            android:layout_marginStart="@dimen/freesharing_dimen_10dip"
+            app:layout_heightPercent="9%w"
+            app:layout_marginTopPercent="1%w">
+
+            <!-- cancel -->
+            <TextView
+                android:id="@+id/tv_free_item_translist_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/freesharing_dimen_10dip"
+                android:gravity="center_vertical"
+                android:text="@string/freesharing_cancel"
+                android:textColor="@color/freesharing_gray"
+                app:layout_textSizePercent="4.5%w" />
+
+            <!-- ok -->
+            <TextView
+                android:id="@+id/tv_free_item_translist_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/freesharing_dimen_10dip"
+                android:gravity="center_vertical"
+                android:text="@string/freesharing_ok"
+                android:textColor="@color/freesharing_mg_blue"
+                app:layout_textSizePercent="4.5%w" />
+
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+        
+        <!-- split -->
+        <View
+            android:id="@+id/v_item_free_translist_split"
+            android:background="@color/freesharing_gray"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/freesharing_dimen_1dip"/>
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

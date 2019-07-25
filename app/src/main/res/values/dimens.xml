@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="freesharing_dimen_0_2dip">0.2dip</dimen>
+    <dimen name="freesharing_dimen_1dip">1dip</dimen>
+    <dimen name="freesharing_dimen_5dip">5dip</dimen>
+    <dimen name="freesharing_dimen_10dip">10dip</dimen>
+</resources>

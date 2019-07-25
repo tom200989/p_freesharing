@@ -1,0 +1,46 @@
+//apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
+apply plugin: 'com.jakewharton.butterknife'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+//        applicationId "com.p_freesharing.p_freesharing"
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    api(name: 'ma_circlebar', ext: 'aar')
+    api 'com.android.support:support-v4:28.0.0'
+    api 'com.android.support:appcompat-v7:28.0.0'
+    api 'com.alibaba:fastjson:1.2.47'
+    api files('libs/maserver_V1.0.jar')
+    api 'org.greenrobot:eventbus:3.1.1'
+    //noinspection GradleDependency
+    api 'com.jakewharton:butterknife:9.0.0-rc3'
+    //noinspection GradleDependency
+    annotationProcessor 'com.jakewharton:butterknife-compiler:9.0.0-rc3'
+    api 'com.android.support:recyclerview-v7:28.0.0'
+    api(name: 'ma_xutils', ext: 'aar')
+    api 'com.zhy:percent-support-extends:1.1.1'
+}

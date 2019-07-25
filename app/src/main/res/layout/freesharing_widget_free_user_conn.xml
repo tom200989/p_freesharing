@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.7"
+            android:background="@color/freesharing_gray" />
+
+        <ImageView
+            android:id="@+id/iv_view_conn_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/freesharing_userhead_conn"
+            app:layout_heightPercent="25%w"
+            app:layout_widthPercent="25%w" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/freesharing_settings_ic_account"
+            app:layout_heightPercent="12%w"
+            app:layout_widthPercent="12%w" />
+
+        <TextView
+            android:id="@+id/tv_view_conn_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_view_conn_bg"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/freesharing_white"
+            android:textStyle="bold"
+            app:layout_marginTopPercent="2%h"
+            app:layout_textSizePercent="3%h" />
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

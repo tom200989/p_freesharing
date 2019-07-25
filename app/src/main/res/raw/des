@@ -1,0 +1,27 @@
+[PART 1:需求]
+本模块为文件对传功能
+
+[PART 2:使用]
+1.导入本aar包外还需要在主工程导入如下aar包, 因为主工程需要同步依赖(直接在raw复制出来即可)
+<1> ma_circlebar.aar
+<2> ma_xutils.aar
+<3> maserver_V1.0.aar
+<4> 其他依赖请看PART_3
+
+2.导入工程包后, 在业务需要的地方跳转到SharingFileActivity.java, 如
+Intent intent = new Intent(context, SharingFileActivity.class);
+startActivity(intent);
+
+3.如果需要修改UI, 请到github上下载本工程源码, 修改布局和drawable的素材即可.
+
+[PART 3:注意事项]
+1.一定要严格按照PART_2的步骤执行
+2.本工程还用到了以下依赖, 请同步导入
+    api 'com.android.support:support-v4:28.0.0'
+    api 'com.android.support:appcompat-v7:28.0.0'
+    api 'com.alibaba:fastjson:1.2.47'
+    api 'org.greenrobot:eventbus:3.1.1'
+    api 'com.jakewharton:butterknife:9.0.0-rc3'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:9.0.0-rc3'
+    api 'com.android.support:recyclerview-v7:28.0.0'
+    api 'com.zhy:percent-support-extends:1.1.1'

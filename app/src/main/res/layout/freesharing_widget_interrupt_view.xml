@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="100%h"
+        app:layout_widthPercent="100%w">
+
+        <!-- background -->
+        <ImageView
+            android:id="@+id/iv_interrupt_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.7"
+            android:background="@color/freesharing_gray" />
+
+        <!-- pop dialog -->
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/freesharing_bg_cancel_view"
+            app:layout_widthPercent="80%w">
+
+            <!-- title -->
+            <TextView
+                android:id="@+id/tv_interrupt_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginEnd="@dimen/freesharing_dimen_10dip"
+                android:layout_marginStart="@dimen/freesharing_dimen_10dip"
+                android:gravity="center"
+                android:text="@string/freesharing_after_interrupting_transmission"
+                android:textColor="@color/freesharing_mg_blue"
+                app:layout_marginTopPercent="3%h"
+                app:layout_textSizePercent="2.7%h" />
+
+            <!-- split -->
+            <View
+                android:id="@+id/v_interrupt_split"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/freesharing_dimen_0_2dip"
+                android:layout_below="@id/tv_interrupt_title"
+                android:layout_marginEnd="@dimen/freesharing_dimen_10dip"
+                android:layout_marginStart="@dimen/freesharing_dimen_10dip"
+                android:background="@color/freesharing_gray11"
+                app:layout_marginTopPercent="2.7%h" />
+
+            <!-- buttons -->
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/v_interrupt_split"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_interrupt_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/freesharing_dimen_5dip"
+                    android:layout_marginStart="@dimen/freesharing_dimen_5dip"
+                    android:gravity="center"
+                    android:text="@string/freesharing_cancel"
+                    app:layout_heightPercent="10%h"
+                    app:layout_textSizePercent="3%h"
+                    app:layout_widthPercent="50%w" />
+
+                <TextView
+                    android:id="@+id/tv_interrupt_ok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/freesharing_dimen_5dip"
+                    android:layout_marginStart="@dimen/freesharing_dimen_5dip"
+                    android:gravity="center"
+                    android:text="@string/freesharing_ok"
+                    android:textColor="@color/freesharing_mg_blue"
+                    app:layout_heightPercent="10%h"
+                    app:layout_textSizePercent="3%h"
+                    app:layout_widthPercent="50%w" />
+
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="freesharing_cancel">Cancel</string>
+    <string name="freesharing_done">Done</string>
+    <string name="freesharing_unknown">Unknown</string>
+    <string name="freesharing_ok">OK</string>
+    <string name="freesharing_connect_failed">Couldn\'t connect</string>
+    <string name="freesharing_images">Images</string>
+    <string name="freesharing_videos">Videos</string>
+    <string name="freesharing_transfer_list">Transfer list</string>
+    <string name="freesharing_no_device_found">No device found</string>
+    <string name="freesharing_when_using_the_same_wifi_network_as_your_friends">When using the same Wi-Fi network as your friends, open Link app to find your connected friends and touch to share.</string>
+    <string name="freesharing_no_transfer_list">No transfer list</string>
+    <string name="freesharing_no_images">No images</string>
+    <string name="freesharing_no_videos">No Videos</string>
+    <string name="freesharing_free_sharing_low">Free sharing</string>
+    <string name="freesharing_free_sharing_noMediaPlayer">The available media player is not detected. Please go to the application market for download</string>
+    <string name="freesharing_you_have_selected_more_than_9_files">You have selected more than 9 files</string>
+    <string name="freesharing_There_are_files_waiting_for_you_to_accept">There are %d files waiting for you to accept</string>
+    <string name="freesharing_From_phonename">From %s</string>
+    <string name="freesharing_please_choose_to_receice_or_reject">Please choose to receive or reject</string>
+    <string name="freesharing_please_wait_a_moment_to_scan">Please wait a moment to scan</string>
+    <string name="freesharing_scanning_online_users">Scanning online users</string>
+    <string name="freesharing_the_request_has_been_sent">The request has been sent, please wait for the response of the other party</string>
+    <string name="freesharing_the_connection_failed_please_try_again">The connection failed, please try again</string>
+    <string name="freesharing_the_connection_is_cancelled_please_try_again">The connection is cancelled, please try again</string>
+    <string name="freesharing_the_other_party_rejected_your_transfer_request">The other party rejected your transfer request</string>
+    <string name="freesharing_the_other_is_preparing_to_send_it">The other is preparing to send it</string>
+    <string name="freesharing_the_other_side_has_been_off_line">The other side has been off-line</string>
+    <string name="freesharing_the_other_party_accepts_your_refusal">The other party accepts your refusal</string>
+    <string name="freesharing_equipment_does_not_support_multi_file_transmission">Equipment does not support multi file transmission</string>
+    <string name="freesharing_start_processing_uploaded_files">Start processing uploaded files</string>
+    <string name="freesharing_the_number_of_lines_uploaded_to_the_limit">The number of lines uploaded to the limit</string>
+    <string name="freesharing_the_current_file_is_uploading">The current file is uploading</string>
+    <string name="freesharing_the_other_side_terminates_the_upload">The other side terminates the upload</string>
+    <string name="freesharing_the_receiving_device_has_reached_the_maximum">The receiving device has reached the maximum number of connections</string>
+    <string name="freesharing_your_current_device_has_the_maximum_number_of_uploads">Your current device has the maximum number of uploads</string>
+    <string name="freesharing_files_can_also_be_uploaded_to_this_request">%s files can also be uploaded to this request</string>
+    <string name="freesharing_the_last_request_did_not_respond_to_many_requests">The last request did not respond to many requests</string>
+    <string name="freesharing_whether_to_cancel_this_request">Whether to cancel the current request?</string>
+    <string name="freesharing_network_exception_please_try_again">Network exception\nplease try again</string>
+    <string name="freesharing_tv_item_free_translist_size">%1$s/%2$s</string>
+    <string name="freesharing_to">to %1$s %2$s</string>
+    <string name="freesharing_from">from  %1$s %2$s</string>
+    <string name="freesharing_file_transfer_failed_unable_to_open">File transfer failed \n unable to open</string>
+    <string name="freesharing_file_type_cannot_be_identified">File type cannot be identified</string>
+    <string name="freesharing_file_is_interrupted_to_upload">File is interrupted to upload</string>
+    <string name="freesharing_after_interrupting_transmission">After interrupting transmission \n the file will not be saved \n Do you want
+        to 
+        continue?</string>
+    <string name="freesharing_the_file_is_being_transferred_please_wait_a_moment">The file is being transferred \n Please wait a 
+        moment</string>
+    <string name="freesharing_the_file_has_been_discontinued">The file has been discontinued</string>
+    <string name="freesharing_interrupt_failure">interrupt failure</string>
+    <string name="freesharing_interrupt_cancellation">Interrupt cancellation</string>
+    <string name="freesharing_receiver_exception">Receiver exception</string>
+    <string name="freesharing_clear_history">Clear history</string>
+    <string name="freesharing_the_file_is_being_sent">The file is being sent\nPlease try again later</string>
+</resources>

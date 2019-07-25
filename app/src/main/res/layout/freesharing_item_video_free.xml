@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/freesharing_gray11"
+        app:layout_heightPercent="25%sw"
+        app:layout_widthPercent="25%sw">
+
+        <!-- pic -->
+        <ImageView
+            android:id="@+id/iv_item_free_pic_video"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+        <!-- check -->
+        <ImageView
+            android:id="@+id/iv_item_free_select_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/freesharing_free_item_unpressed"
+            app:layout_heightPercent="30%h"
+            app:layout_marginPercent="6%w"
+            app:layout_widthPercent="30%w" />
+
+        <!-- camera -->
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            app:layout_heightPercent="20%h">
+
+            <!-- camera logo -->
+            <ImageView
+                android:id="@+id/iv_item_free_camera_logo_video"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="@dimen/freesharing_dimen_5dip"
+                android:src="@drawable/freesharing_free_item_camera"
+                app:layout_widthPercent="20%w" />
+
+            <!-- camera time -->
+            <TextView
+                android:id="@+id/tv_item_free_cameraTime_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="@dimen/freesharing_dimen_5dip"
+                android:layout_toEndOf="@id/iv_item_free_camera_logo_video"
+                android:text="00:00"
+                android:textColor="@color/freesharing_white"
+                app:layout_textSizePercent="65%h" />
+
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

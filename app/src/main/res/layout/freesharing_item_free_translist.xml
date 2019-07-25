@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:background="@color/freesharing_white"
+    android:layout_height="wrap_content">
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/rl_item_free_translist_all"
+        android:background="@color/freesharing_white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="16%sh">
+
+        <!-- * pic -->
+        <ImageView
+            android:scaleType="centerInside"
+            android:id="@+id/iv_item_free_translist_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/freesharing_dimen_10dip"
+            app:layout_heightPercent="60%h"
+            app:layout_widthPercent="60%h" />
+
+        <!-- * info -->
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:id="@+id/ll_item_free_translist_info"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/freesharing_dimen_10dip"
+            android:layout_toEndOf="@id/iv_item_free_translist_pic"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            app:layout_marginBottomPercent="20%h"
+            app:layout_marginTopPercent="20%h"
+            app:layout_widthPercent="62%w">
+
+            <TextView
+                android:id="@+id/tv_item_free_translist_title"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/freesharing_unknown"
+                android:textStyle="bold"
+                app:layout_textSizePercent="23%h" />
+
+            <TextView
+                android:id="@+id/tv_item_free_translist_ip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/freesharing_From_phonename"
+                android:textColor="@color/freesharing_gray11"
+                app:layout_textSizePercent="18%h" />
+
+            <TextView
+                android:id="@+id/tv_item_free_translist_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/freesharing_tv_item_free_translist_size"
+                android:textColor="@color/freesharing_gray11"
+                app:layout_textSizePercent="18%h" />
+
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <!-- * cancel and failed and finish -->
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@id/ll_item_free_translist_info">
+
+            <!-- ** progress and percent -->
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:id="@+id/rl_item_free_translist_progress"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <!-- progress -->
+                <com.zhy.android.percent.support.PercentRelativeLayout
+                    android:id="@+id/rl_item_free_translist_progress_child"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    app:layout_heightPercent="30%h"
+                    app:layout_marginTopPercent="20%h"
+                    app:layout_widthPercent="30%h">
+
+                    <com.p_circlebar.p_circlebar.core.CircleBar
+                        android:id="@+id/cp_item_free_translist_progress"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:progress="70"
+                        app:ma_bgColor="@color/freesharing_white"
+                        app:ma_isShowText="false"
+                        app:ma_piecesThick="5dp"
+                        app:ma_dotColor="@color/freesharing_gray11"
+                        app:ma_endColor="@color/freesharing_mg_blue"
+                        app:ma_startColor="@color/freesharing_mg_blue"
+                        app:dotStyle="dot"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/freesharing_translist_cancel"
+                        app:layout_heightPercent="75%h"
+                        app:layout_widthPercent="75%h" />
+
+                </com.zhy.android.percent.support.PercentRelativeLayout>
+
+                <!-- percent text: 80% -->
+                <TextView
+                    android:id="@+id/tv_item_free_translist_percent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rl_item_free_translist_progress_child"
+                    android:layout_centerHorizontal="true"
+                    android:text="0%"
+                    android:textColor="@color/freesharing_mg_blue"
+                    app:layout_marginTopPercent="5%h"
+                    app:layout_textSizePercent="15%h" />
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+            <!-- ** retry -->
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:id="@+id/rl_item_free_translist_retry"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <!-- refresh -->
+                <com.zhy.android.percent.support.PercentRelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/freesharing_bg_item_translist_refresh"
+                    app:layout_heightPercent="30%h"
+                    app:layout_widthPercent="30%h">
+
+                    <ImageView
+                        android:id="@+id/iv_item_free_translist_retry_logo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/freesharing_item_free_translist_refresh"
+                        app:layout_heightPercent="80%h"
+                        app:layout_widthPercent="80%h" />
+
+                </com.zhy.android.percent.support.PercentRelativeLayout>
+
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+            <!-- ** failed -->
+            <ImageView
+                android:id="@+id/iv_item_free_translist_failed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/freesharing_item_translist_failed"
+                android:visibility="gone"
+                app:layout_heightPercent="20%h"
+                app:layout_widthPercent="20%h" />
+            
+            <!-- ** finished -->
+            <ImageView
+                android:id="@+id/iv_item_free_translist_finish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/freesharing_item_free_translist_finish"
+                android:visibility="gone"
+                app:layout_heightPercent="20%h"
+                app:layout_widthPercent="20%h" />
+
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

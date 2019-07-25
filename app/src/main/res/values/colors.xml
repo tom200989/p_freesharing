@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="freesharing_mg_blue">#009AFF</color>
+    <color name="freesharing_black">#ff000000</color>
+    <color name="freesharing_gray">#aaa</color>
+    <color name="freesharing_white">#ffffff</color>
+    <color name="freesharing_gray11">#A6A6A0</color>
+    <color name="freesharing_gray12">#ececec</color>
+    <color name="freesharing_fffef5">#fffef5</color>
+    <color name="freesharing_c_666666">#666666</color>
+    <color name="freesharing_mihuang">#eef6ff</color>
+</resources>
