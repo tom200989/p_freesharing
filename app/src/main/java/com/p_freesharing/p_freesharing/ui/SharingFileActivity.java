@@ -11,6 +11,7 @@ import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.text.format.Formatter;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewTreeObserver;
 import android.view.animation.AlphaAnimation;
@@ -1241,7 +1242,7 @@ public class SharingFileActivity extends Activity {
 
         // 1.读取图库
         AbstructProvider imageProvider = new ImageProvider(this);
-        images_resource = (List<Freesharing_Image>) imageProvider.getList();
+        images_resource = getFilterImage((List<Freesharing_Image>) imageProvider.getList());
         Collections.sort(images_resource, new CompareHelper<>());
         // 判断图库是否有图片
         if (images_resource == null | images_resource.size() == 0) {
@@ -1266,6 +1267,19 @@ public class SharingFileActivity extends Activity {
 
         // 3.读取传输历史列表
         readTransHistory();
+    }
+
+    /**
+     * 过滤出DCIM目录的文件
+     */
+    public List<Freesharing_Image> getFilterImage(List<Freesharing_Image> oldImages) {
+        List<Freesharing_Image> newImages = new ArrayList<>();
+        for (Freesharing_Image oldImage : oldImages) {
+            if (oldImage.getPath().contains("/storage/emulated/0/DCIM")) {// 把图库以外的图片过滤掉
+                newImages.add(oldImage);
+            }
+        }
+        return newImages;
     }
 
     /**
@@ -1303,6 +1317,7 @@ public class SharingFileActivity extends Activity {
                 if (isBottom & isIdle & isFinish) {
                     // 4.子线程进行加载
                     threadLoadMore(imageThread, images_resource, freesharingFreeImages.size(), maxCount);
+                    Log.i("ma_rcv_new", "fuck you");
                 }
             }
         });
@@ -1722,15 +1737,13 @@ public class SharingFileActivity extends Activity {
                 Freesharing_Image image = (Freesharing_Image) datas.get(i);
                 // Log.i("ma_data", "mimetype: " + image.getMimeType());
                 // Log.i("ma_data", "path: " + image.getPath());
-                if (image.getPath().contains("/storage/emulated/0/DCIM")) {// 检查是否位于图库中(其他文件夹的不显示)
-                    Freesharing_FreeImage freesharingFreeImage = FreeFilter.getImageFilterSingle(this, image);
-                    runOnUiThread(() -> {
-                        if (freesharingFreeImage != null) {
-                            freesharingFreeImages.add(freesharingFreeImage);
-                            freeImageAdapter.notifys(freesharingFreeImages);
-                        }
-                    });
-                }
+                Freesharing_FreeImage freesharingFreeImage = FreeFilter.getImageFilterSingle(this, image);
+                runOnUiThread(() -> {
+                    if (freesharingFreeImage != null) {
+                        freesharingFreeImages.add(freesharingFreeImage);
+                        freeImageAdapter.notifys(freesharingFreeImages);
+                    }
+                });
             } else if (datas.get(i) instanceof Freesharing_Video) {// 视频处理格式
                 Freesharing_FreeVideo freesharingFreeVideo = FreeFilter.getVideoFilterSingle(this, (Freesharing_Video) datas.get(i));
                 runOnUiThread(() -> {

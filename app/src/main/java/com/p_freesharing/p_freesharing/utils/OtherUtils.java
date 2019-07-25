@@ -54,7 +54,7 @@ public class OtherUtils {
         int lastVisibleItemPosition = layoutManager.findLastCompletelyVisibleItemPosition();
         //当前屏幕所看到的子项个数
         int visibleItemCount = layoutManager.getChildCount();
-        //当前 RecyclerView 的所有子项个数O
+        //当前 RecyclerView 的所有子项个数
         int totalItemCount = layoutManager.getItemCount();
         //RecyclerView 的滑动状态
         int state = recyclerView.getScrollState();
