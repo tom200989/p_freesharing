@@ -5,8 +5,7 @@
 1.导入本aar包外还需要在主工程导入如下aar包, 因为主工程需要同步依赖(直接在raw复制出来即可)
 <1> ma_circlebar.aar
 <2> ma_xutils.aar
-<3> maserver.aar
-<4> 其他依赖请看PART_3
+<3> 其他依赖请看PART_3
 
 2.导入工程包后, 在业务需要的地方跳转到SharingFileActivity.java, 如
 Intent intent = new Intent(context, SharingFileActivity.class);
