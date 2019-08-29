@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.zhy.android.percent.support.PercentRelativeLayout
+<com.p_freesharing.p_freesharing.utils.percent.PercentRelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <com.zhy.android.percent.support.PercentLinearLayout
+    <com.p_freesharing.p_freesharing.utils.percent.PercentLinearLayout
         android:id="@+id/ll_item_free_translist_dialog"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -40,7 +40,7 @@
             app:layout_textSizePercent="4%w" />
 
         <!-- buttons -->
-        <com.zhy.android.percent.support.PercentRelativeLayout
+        <com.p_freesharing.p_freesharing.utils.percent.PercentRelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/freesharing_dimen_10dip"
@@ -71,7 +71,7 @@
                 android:textColor="@color/freesharing_mg_blue"
                 app:layout_textSizePercent="4.5%w" />
 
-        </com.zhy.android.percent.support.PercentRelativeLayout>
+        </com.p_freesharing.p_freesharing.utils.percent.PercentRelativeLayout>
         
         <!-- split -->
         <View
@@ -80,6 +80,6 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/freesharing_dimen_1dip"/>
 
-    </com.zhy.android.percent.support.PercentLinearLayout>
+    </com.p_freesharing.p_freesharing.utils.percent.PercentLinearLayout>
 
-</com.zhy.android.percent.support.PercentRelativeLayout>
+</com.p_freesharing.p_freesharing.utils.percent.PercentRelativeLayout>

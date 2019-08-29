@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.zhy.android.percent.support.PercentRelativeLayout
+<com.p_freesharing.p_freesharing.utils.percent.PercentRelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content">
 
-    <com.zhy.android.percent.support.PercentRelativeLayout
+    <com.p_freesharing.p_freesharing.utils.percent.PercentRelativeLayout
         android:id="@+id/rl_item_free_choice_user"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -14,7 +14,7 @@
         app:layout_widthPercent="30%sw">
 
         <!-- head -->
-        <com.zhy.android.percent.support.PercentRelativeLayout
+        <com.p_freesharing.p_freesharing.utils.percent.PercentRelativeLayout
             android:id="@+id/rl_item_free_choice_user_head"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -41,7 +41,7 @@
                 app:layout_heightPercent="50%h"
                 app:layout_widthPercent="50%w" />
 
-        </com.zhy.android.percent.support.PercentRelativeLayout>
+        </com.p_freesharing.p_freesharing.utils.percent.PercentRelativeLayout>
 
         <TextView
             android:id="@+id/tv_item_free_choice_user_ip"
@@ -67,6 +67,6 @@
             app:layout_paddingPercent="7%w"
             app:layout_textSizePercent="9%h" />
 
-    </com.zhy.android.percent.support.PercentRelativeLayout>
+    </com.p_freesharing.p_freesharing.utils.percent.PercentRelativeLayout>
 
-</com.zhy.android.percent.support.PercentRelativeLayout>
+</com.p_freesharing.p_freesharing.utils.percent.PercentRelativeLayout>

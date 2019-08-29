@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.zhy.android.percent.support.PercentRelativeLayout
+<com.p_freesharing.p_freesharing.utils.percent.PercentRelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="wrap_content"
     android:background="@color/freesharing_white"
     android:layout_height="wrap_content">
 
-    <com.zhy.android.percent.support.PercentRelativeLayout
+    <com.p_freesharing.p_freesharing.utils.percent.PercentRelativeLayout
         android:id="@+id/rl_item_free_translist_all"
         android:background="@color/freesharing_white"
         android:layout_width="match_parent"
@@ -25,7 +25,7 @@
             app:layout_widthPercent="60%h" />
 
         <!-- * info -->
-        <com.zhy.android.percent.support.PercentLinearLayout
+        <com.p_freesharing.p_freesharing.utils.percent.PercentLinearLayout
             android:id="@+id/ll_item_free_translist_info"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -62,23 +62,23 @@
                 android:textColor="@color/freesharing_gray11"
                 app:layout_textSizePercent="18%h" />
 
-        </com.zhy.android.percent.support.PercentLinearLayout>
+        </com.p_freesharing.p_freesharing.utils.percent.PercentLinearLayout>
 
         <!-- * cancel and failed and finish -->
-        <com.zhy.android.percent.support.PercentRelativeLayout
+        <com.p_freesharing.p_freesharing.utils.percent.PercentRelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_toEndOf="@id/ll_item_free_translist_info">
 
             <!-- ** progress and percent -->
-            <com.zhy.android.percent.support.PercentRelativeLayout
+            <com.p_freesharing.p_freesharing.utils.percent.PercentRelativeLayout
                 android:id="@+id/rl_item_free_translist_progress"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:visibility="gone">
 
                 <!-- progress -->
-                <com.zhy.android.percent.support.PercentRelativeLayout
+                <com.p_freesharing.p_freesharing.utils.percent.PercentRelativeLayout
                     android:id="@+id/rl_item_free_translist_progress_child"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -109,7 +109,7 @@
                         app:layout_heightPercent="75%h"
                         app:layout_widthPercent="75%h" />
 
-                </com.zhy.android.percent.support.PercentRelativeLayout>
+                </com.p_freesharing.p_freesharing.utils.percent.PercentRelativeLayout>
 
                 <!-- percent text: 80% -->
                 <TextView
@@ -122,17 +122,17 @@
                     android:textColor="@color/freesharing_mg_blue"
                     app:layout_marginTopPercent="5%h"
                     app:layout_textSizePercent="15%h" />
-            </com.zhy.android.percent.support.PercentRelativeLayout>
+            </com.p_freesharing.p_freesharing.utils.percent.PercentRelativeLayout>
 
             <!-- ** retry -->
-            <com.zhy.android.percent.support.PercentRelativeLayout
+            <com.p_freesharing.p_freesharing.utils.percent.PercentRelativeLayout
                 android:id="@+id/rl_item_free_translist_retry"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:visibility="gone">
 
                 <!-- refresh -->
-                <com.zhy.android.percent.support.PercentRelativeLayout
+                <com.p_freesharing.p_freesharing.utils.percent.PercentRelativeLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
@@ -150,9 +150,9 @@
                         app:layout_heightPercent="80%h"
                         app:layout_widthPercent="80%h" />
 
-                </com.zhy.android.percent.support.PercentRelativeLayout>
+                </com.p_freesharing.p_freesharing.utils.percent.PercentRelativeLayout>
 
-            </com.zhy.android.percent.support.PercentRelativeLayout>
+            </com.p_freesharing.p_freesharing.utils.percent.PercentRelativeLayout>
 
             <!-- ** failed -->
             <ImageView
@@ -176,8 +176,8 @@
                 app:layout_heightPercent="20%h"
                 app:layout_widthPercent="20%h" />
 
-        </com.zhy.android.percent.support.PercentRelativeLayout>
+        </com.p_freesharing.p_freesharing.utils.percent.PercentRelativeLayout>
 
-    </com.zhy.android.percent.support.PercentRelativeLayout>
+    </com.p_freesharing.p_freesharing.utils.percent.PercentRelativeLayout>
 
-</com.zhy.android.percent.support.PercentRelativeLayout>
+</com.p_freesharing.p_freesharing.utils.percent.PercentRelativeLayout>

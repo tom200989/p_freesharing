@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.zhy.android.percent.support.PercentRelativeLayout
+<com.p_freesharing.p_freesharing.utils.percent.PercentRelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.zhy.android.percent.support.PercentRelativeLayout
+    <com.p_freesharing.p_freesharing.utils.percent.PercentRelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_heightPercent="100%h"
@@ -20,7 +20,7 @@
             android:background="@color/freesharing_gray" />
 
         <!-- pop dialog -->
-        <com.zhy.android.percent.support.PercentRelativeLayout
+        <com.p_freesharing.p_freesharing.utils.percent.PercentRelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
@@ -53,7 +53,7 @@
                 app:layout_marginTopPercent="2.7%h" />
 
             <!-- buttons -->
-            <com.zhy.android.percent.support.PercentLinearLayout
+            <com.p_freesharing.p_freesharing.utils.percent.PercentLinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/v_interrupt_split"
@@ -84,10 +84,10 @@
                     app:layout_textSizePercent="3%h"
                     app:layout_widthPercent="50%w" />
 
-            </com.zhy.android.percent.support.PercentLinearLayout>
+            </com.p_freesharing.p_freesharing.utils.percent.PercentLinearLayout>
 
-        </com.zhy.android.percent.support.PercentRelativeLayout>
+        </com.p_freesharing.p_freesharing.utils.percent.PercentRelativeLayout>
 
-    </com.zhy.android.percent.support.PercentRelativeLayout>
+    </com.p_freesharing.p_freesharing.utils.percent.PercentRelativeLayout>
 
-</com.zhy.android.percent.support.PercentRelativeLayout>
+</com.p_freesharing.p_freesharing.utils.percent.PercentRelativeLayout>

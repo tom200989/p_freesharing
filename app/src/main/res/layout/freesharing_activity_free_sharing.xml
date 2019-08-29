@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.zhy.android.percent.support.PercentRelativeLayout
+<com.p_freesharing.p_freesharing.utils.percent.PercentRelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/freesharing_fffef5">
-
+    
     <!-- @@@@ banner @@@@ 9%-->
-    <com.zhy.android.percent.support.PercentRelativeLayout
+    <com.p_freesharing.p_freesharing.utils.percent.PercentRelativeLayout
         android:id="@+id/rl_free_banner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -46,10 +46,10 @@
             android:visibility="gone"
             app:layout_textSizePercent="24%h" />
 
-    </com.zhy.android.percent.support.PercentRelativeLayout>
+    </com.p_freesharing.p_freesharing.utils.percent.PercentRelativeLayout>
 
     <!-- @@@@ tab @@@@ 7%-->
-    <com.zhy.android.percent.support.PercentLinearLayout
+    <com.p_freesharing.p_freesharing.utils.percent.PercentLinearLayout
         android:id="@+id/rl_free_tab"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -59,7 +59,7 @@
         app:layout_heightPercent="7%h">
 
         <!-- images tag -->
-        <com.zhy.android.percent.support.PercentRelativeLayout
+        <com.p_freesharing.p_freesharing.utils.percent.PercentRelativeLayout
             android:id="@+id/rl_free_images_tag"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -82,10 +82,10 @@
                 android:background="@drawable/freesharing_tabline"
                 app:layout_heightPercent="5%h" />
 
-        </com.zhy.android.percent.support.PercentRelativeLayout>
+        </com.p_freesharing.p_freesharing.utils.percent.PercentRelativeLayout>
 
         <!-- videos tag -->
-        <com.zhy.android.percent.support.PercentRelativeLayout
+        <com.p_freesharing.p_freesharing.utils.percent.PercentRelativeLayout
             android:id="@+id/rl_free_videos_tag"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -109,10 +109,10 @@
                 android:visibility="gone"
                 app:layout_heightPercent="5%h" />
 
-        </com.zhy.android.percent.support.PercentRelativeLayout>
+        </com.p_freesharing.p_freesharing.utils.percent.PercentRelativeLayout>
 
         <!-- transfer list tag -->
-        <com.zhy.android.percent.support.PercentRelativeLayout
+        <com.p_freesharing.p_freesharing.utils.percent.PercentRelativeLayout
             android:id="@+id/rl_free_transferList_tag"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -136,9 +136,9 @@
                 android:visibility="gone"
                 app:layout_heightPercent="5%h" />
 
-        </com.zhy.android.percent.support.PercentRelativeLayout>
+        </com.p_freesharing.p_freesharing.utils.percent.PercentRelativeLayout>
 
-    </com.zhy.android.percent.support.PercentLinearLayout>
+    </com.p_freesharing.p_freesharing.utils.percent.PercentLinearLayout>
 
     <!-- @@@@ clear all 6% @@@@  -->
     <TextView
@@ -155,14 +155,14 @@
         app:layout_textSizePercent="2.5%h" />
 
     <!-- @@@@ recycle @@@@ 84%-->
-    <com.zhy.android.percent.support.PercentRelativeLayout
+    <com.p_freesharing.p_freesharing.utils.percent.PercentRelativeLayout
         android:id="@+id/rl_free_recycle"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/tv_free_clearHistory">
 
         <!-- IMAGE -->
-        <com.zhy.android.percent.support.PercentRelativeLayout
+        <com.p_freesharing.p_freesharing.utils.percent.PercentRelativeLayout
             android:id="@+id/rl_free_image"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -175,7 +175,7 @@
                 android:layout_height="match_parent" />
 
             <!--  no image  -->
-            <com.zhy.android.percent.support.PercentRelativeLayout
+            <com.p_freesharing.p_freesharing.utils.percent.PercentRelativeLayout
                 android:id="@+id/rl_free_noImage"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -202,12 +202,12 @@
                     app:layout_marginTopPercent="5%h"
                     app:layout_textSizePercent="3.5%h" />
 
-            </com.zhy.android.percent.support.PercentRelativeLayout>
+            </com.p_freesharing.p_freesharing.utils.percent.PercentRelativeLayout>
 
-        </com.zhy.android.percent.support.PercentRelativeLayout>
+        </com.p_freesharing.p_freesharing.utils.percent.PercentRelativeLayout>
 
         <!-- VIDEO -->
-        <com.zhy.android.percent.support.PercentRelativeLayout
+        <com.p_freesharing.p_freesharing.utils.percent.PercentRelativeLayout
             android:id="@+id/rl_free_video"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -221,7 +221,7 @@
                 android:layout_below="@+id/rl_free_tab" />
 
             <!--  no video  -->
-            <com.zhy.android.percent.support.PercentRelativeLayout
+            <com.p_freesharing.p_freesharing.utils.percent.PercentRelativeLayout
                 android:id="@+id/rl_free_noVideo"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -248,12 +248,12 @@
                     app:layout_marginTopPercent="5%h"
                     app:layout_textSizePercent="3.5%h" />
 
-            </com.zhy.android.percent.support.PercentRelativeLayout>
+            </com.p_freesharing.p_freesharing.utils.percent.PercentRelativeLayout>
 
-        </com.zhy.android.percent.support.PercentRelativeLayout>
+        </com.p_freesharing.p_freesharing.utils.percent.PercentRelativeLayout>
 
         <!-- TRANSFER LIST -->
-        <com.zhy.android.percent.support.PercentRelativeLayout
+        <com.p_freesharing.p_freesharing.utils.percent.PercentRelativeLayout
             android:id="@+id/rl_free_transferList"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -265,7 +265,7 @@
                 android:layout_height="match_parent" />
 
             <!--  no transfer -->
-            <com.zhy.android.percent.support.PercentRelativeLayout
+            <com.p_freesharing.p_freesharing.utils.percent.PercentRelativeLayout
                 android:id="@+id/rl_free_noTransferList"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -292,14 +292,14 @@
                     app:layout_marginTopPercent="5%h"
                     app:layout_textSizePercent="3.5%h" />
 
-            </com.zhy.android.percent.support.PercentRelativeLayout>
+            </com.p_freesharing.p_freesharing.utils.percent.PercentRelativeLayout>
 
-        </com.zhy.android.percent.support.PercentRelativeLayout>
+        </com.p_freesharing.p_freesharing.utils.percent.PercentRelativeLayout>
 
-    </com.zhy.android.percent.support.PercentRelativeLayout>
+    </com.p_freesharing.p_freesharing.utils.percent.PercentRelativeLayout>
 
     <!-- @@@@ no device found @@@@ -->
-    <com.zhy.android.percent.support.PercentRelativeLayout
+    <com.p_freesharing.p_freesharing.utils.percent.PercentRelativeLayout
         android:id="@+id/rl_free_noDevice"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -326,10 +326,10 @@
             app:layout_marginRightPercent="2%w"
             app:layout_textSizePercent="2.2%h" />
 
-    </com.zhy.android.percent.support.PercentRelativeLayout>
+    </com.p_freesharing.p_freesharing.utils.percent.PercentRelativeLayout>
 
     <!-- @@@@ show detail image @@@@ -->
-    <com.zhy.android.percent.support.PercentRelativeLayout
+    <com.p_freesharing.p_freesharing.utils.percent.PercentRelativeLayout
         android:id="@+id/rl_free_detailImage"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -344,7 +344,7 @@
             app:layout_marginPercent="1%w" />
 
         <!-- banner -->
-        <com.zhy.android.percent.support.PercentRelativeLayout
+        <com.p_freesharing.p_freesharing.utils.percent.PercentRelativeLayout
             android:id="@+id/rl_free_detailImage_banner"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -374,12 +374,12 @@
                 app:layout_textSizePercent="33%h"
                 app:layout_widthPercent="50%w" />
 
-        </com.zhy.android.percent.support.PercentRelativeLayout>
+        </com.p_freesharing.p_freesharing.utils.percent.PercentRelativeLayout>
 
-    </com.zhy.android.percent.support.PercentRelativeLayout>
+    </com.p_freesharing.p_freesharing.utils.percent.PercentRelativeLayout>
 
     <!-- @@@@ show transferList dialog @@@@ -->
-    <com.zhy.android.percent.support.PercentRelativeLayout
+    <com.p_freesharing.p_freesharing.utils.percent.PercentRelativeLayout
         android:id="@+id/rl_free_transferList_dialog"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -400,10 +400,10 @@
             android:background="@drawable/freesharing_bg_freetranslist_dialog_rcv"
             app:layout_marginPercent="10%w" />
 
-    </com.zhy.android.percent.support.PercentRelativeLayout>
+    </com.p_freesharing.p_freesharing.utils.percent.PercentRelativeLayout>
 
     <!-- @@@@ show had connected user -->
-    <com.zhy.android.percent.support.PercentRelativeLayout
+    <com.p_freesharing.p_freesharing.utils.percent.PercentRelativeLayout
         android:id="@+id/rl_free_choice_user"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -435,7 +435,7 @@
             android:layout_marginStart="10dp"
             android:background="@color/freesharing_gray" />
 
-        <com.zhy.android.percent.support.PercentRelativeLayout
+        <com.p_freesharing.p_freesharing.utils.percent.PercentRelativeLayout
             android:id="@+id/rl_free_choice_user_hide"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -452,9 +452,9 @@
                 app:layout_heightPercent="60%h"
                 app:layout_widthPercent="60%h" />
 
-        </com.zhy.android.percent.support.PercentRelativeLayout>
+        </com.p_freesharing.p_freesharing.utils.percent.PercentRelativeLayout>
 
-    </com.zhy.android.percent.support.PercentRelativeLayout>
+    </com.p_freesharing.p_freesharing.utils.percent.PercentRelativeLayout>
 
     <!-- @@@@ wait @@@@ -->
     <com.p_freesharing.p_freesharing.widget.ConnView
@@ -478,4 +478,4 @@
         android:layout_height="match_parent"
         android:visibility="gone" />
 
-</com.zhy.android.percent.support.PercentRelativeLayout>
+</com.p_freesharing.p_freesharing.utils.percent.PercentRelativeLayout>
